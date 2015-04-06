@@ -42,4 +42,17 @@ public class PaymentRunnable implements Runnable
 		{
 		}
 	}
+	
+	// test driver for unit test
+	public static void main(String[] args)
+	{
+		// instantiate PaymentRunnable class
+		PaymentRunnable p = new PaymentRunnable(new LineOfCredit(), 10);
+		// call method
+		System.out.println("Expected output is 10 calls to payment method with random values");
+		p.run();
+		
+	}
+	
+	
 }
